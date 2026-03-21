@@ -1,0 +1,10 @@
+flask
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+dill
+pymongo==4.6.1
+mlflow
+dotenv
