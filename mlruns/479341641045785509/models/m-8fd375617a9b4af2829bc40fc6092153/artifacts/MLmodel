@@ -1,0 +1,24 @@
+artifact_path: file:D:/e drive/Only_Project/Telecom Customer Churn Prediction with
+  Explainable AI/mlruns/479341641045785509/models/m-8fd375617a9b4af2829bc40fc6092153/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.10.1
+model_id: m-8fd375617a9b4af2829bc40fc6092153
+model_size_bytes: 19772911
+model_uuid: m-8fd375617a9b4af2829bc40fc6092153
+prompts: null
+run_id: 64ed10c660bd482086a3414ceb3d68f3
+utc_time_created: '2026-03-22 16:42:15.763544'

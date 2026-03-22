@@ -35,12 +35,26 @@ class DataTrasformation:
 
             logging.info("Numerical Colum convert into text")
 
-            preprocessor=ColumnTransformer(
-                [
-                    ("num_pipelines",num_pipeline,numerical_columns)
-                ],
-                remainder="passthrough"
-            )
+            categorical_columns = [
+    "gender","Partner","Dependents","PhoneService",
+    "MultipleLines","InternetService","OnlineSecurity",
+    "OnlineBackup","DeviceProtection","TechSupport",
+    "StreamingTV","StreamingMovies","Contract",
+    "PaperlessBilling","PaymentMethod"
+]
+            cat_pipeline = Pipeline(
+    steps=[
+        ("imputer", SimpleImputer(strategy="most_frequent")),
+        ("encoder", OneHotEncoder(handle_unknown="ignore"))
+    ]
+)           
+            preprocessor = ColumnTransformer(
+    [
+        ("num", num_pipeline, numerical_columns),
+        ("cat", cat_pipeline, categorical_columns)
+    ]
+)
+
 
             return preprocessor
         except Exception as es:
@@ -63,12 +77,16 @@ class DataTrasformation:
             preprocessor_obj=self.get_transformation()
             target_column_name="Churn"
 
+                # 🔥 FIX: Convert target to numeric
+            train_data_df[target_column_name] = train_data_df[target_column_name].map({"Yes":1,"No":0})
+            test_data_df[target_column_name] = test_data_df[target_column_name].map({"Yes":1,"No":0})
+
             #splling data
 
-            x_train=train_data_df.drop(columns=[target_column_name])
+            x_train=train_data_df.drop(columns=[target_column_name,"customerID"])
             y_train=train_data_df[target_column_name]
 
-            x_test=test_data_df.drop(columns=[target_column_name])
+            x_test=test_data_df.drop(columns=[target_column_name,"customerID"])
             y_test=test_data_df[target_column_name]
 
 

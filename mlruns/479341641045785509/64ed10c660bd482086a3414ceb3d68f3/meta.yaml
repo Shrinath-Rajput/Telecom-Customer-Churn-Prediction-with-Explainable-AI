@@ -1,0 +1,15 @@
+artifact_uri: file:D:/e drive/Only_Project/Telecom Customer Churn Prediction with
+  Explainable AI/mlruns/479341641045785509/64ed10c660bd482086a3414ceb3d68f3/artifacts
+end_time: 1774197741456
+entry_point_name: ''
+experiment_id: '479341641045785509'
+lifecycle_stage: active
+run_id: 64ed10c660bd482086a3414ceb3d68f3
+run_name: Random Forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774197734814
+status: 3
+tags: []
+user_id: rajpu

@@ -1,0 +1,11 @@
+artifact_location: file:D:/e drive/Only_Project/Telecom Customer Churn Prediction
+  with Explainable AI/mlruns/479341641045785509/models/m-33215817b3fb4f55bb881cc866b60513/artifacts
+creation_timestamp: 1774197728633
+experiment_id: '479341641045785509'
+last_updated_timestamp: 1774197734783
+model_id: m-33215817b3fb4f55bb881cc866b60513
+model_type: null
+name: Logistic Regression
+source_run_id: 20e92bcb3c484b7e9913719a79abaa80
+status: 2
+status_message: null

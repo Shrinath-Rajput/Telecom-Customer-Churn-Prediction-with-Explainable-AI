@@ -1,0 +1,8 @@
+[2026-03-22 22:12:07,750] INFO - Enter the dataset and method  that points
+[2026-03-22 22:12:07,770] INFO - Data is Read Here 
+[2026-03-22 22:12:07,808] INFO - Data is fully read
+[2026-03-22 22:12:07,954] INFO - Read the train and test dataset
+[2026-03-22 22:12:07,954] INFO - Numerical Colum convert into text
+[2026-03-22 22:12:07,959] INFO - Applying the preprocessor on training and testingf dataaset
+[2026-03-22 22:12:08,409] INFO - Training Model:Logistic Regression
+[2026-03-22 22:12:14,924] INFO - Training Model:Random Forest

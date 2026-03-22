@@ -1,0 +1,11 @@
+artifact_location: file:D:/e drive/Only_Project/Telecom Customer Churn Prediction
+  with Explainable AI/mlruns/479341641045785509/models/m-8fd375617a9b4af2829bc40fc6092153/artifacts
+creation_timestamp: 1774197735693
+experiment_id: '479341641045785509'
+last_updated_timestamp: 1774197741423
+model_id: m-8fd375617a9b4af2829bc40fc6092153
+model_type: null
+name: Random Forest
+source_run_id: 64ed10c660bd482086a3414ceb3d68f3
+status: 2
+status_message: null
