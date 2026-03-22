@@ -1,0 +1,6 @@
+[2026-03-22 15:42:01,658] INFO - Enter the dataset and method  that points
+[2026-03-22 15:42:01,674] INFO - Data is Read Here 
+[2026-03-22 15:42:01,696] INFO - Data is fully read
+[2026-03-22 15:42:01,800] INFO - Read the train and test dataset
+[2026-03-22 15:42:01,801] INFO - Numerical Colum convert into text
+[2026-03-22 15:42:01,808] INFO - Applying the preprocessor on training and testingf dataaset

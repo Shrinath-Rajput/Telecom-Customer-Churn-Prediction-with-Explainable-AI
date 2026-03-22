@@ -31,7 +31,6 @@ class DataIngestion:
             logging.info("Data is fully read")
 
             #train and test data 
-
             train_data,test_data=train_test_split(df,random_state=42,test_size=0.2)
             train_data.to_csv(self.Ingestion_data_Config.train_Data_Path,index=False,header=True)
             test_data.to_csv(self.Ingestion_data_Config.test_Data_Path,index=False,header=True)
